@@ -15,6 +15,23 @@
 | Internal storage | 128 GB total; approximately 125 GB used | Supplied by project owner; available free space not stated |
 | Current build fingerprint | Unknown | Not collected |
 
+## Project requirements
+
+### Target handset
+
+- Motorola Moto G60, model `XT2135-2`, codename `hanoip`.
+- At least 6 GB RAM for the initial target configuration.
+- Initial firmware baseline: `S2RIS32.32-20-9-9-2-3`; other firmware variants need separate validation.
+- Owner-reported storage: 128 GB total, approximately 125 GB used. The used-space figure must not be mistaken for free space or a required storage capacity.
+- Broader storage-variant compatibility is a goal, subject to partition layout, available space, and actual testing. It is not yet verified that all storage variants can boot.
+
+### Host computer and device access
+
+- Android Platform Tools with ADB and Fastboot available on the computer.
+- A working USB data connection.
+- Bootloader unlocking may be postponed during research and documentation. It will generally be needed before installing and testing an unofficial system image; the unlock process may wipe user data.
+- A verified stock-firmware recovery route and backups are prerequisites for any future testing.
+
 ## Firmware identity
 
 The reported build string matches the public package name:
