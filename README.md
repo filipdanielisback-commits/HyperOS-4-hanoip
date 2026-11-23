@@ -7,11 +7,34 @@ Community research and development project investigating the feasibility of a **
 ## Target device
 
 - Model: Motorola XT2135-2 (Moto G60 / Moto G60 Vision)
+- Codename: `hanoip`
 - RAM: 6 GB (reported by device owner)
+- Internal storage: 128 GB total, approximately 125 GB used (reported by device owner)
 - Reported firmware: `S2RIS32.32-20-9-9-2-3`
 - Matching firmware family: XT2135-2 HANOIP RETEU Android 12 package
 
 See [DEVICE_INFO.md](docs/DEVICE_INFO.md) for evidence and verification notes. Do not assume that another XT2135 variant or regional firmware is interchangeable.
+
+## Requirements and target compatibility
+
+These are the project's intended prerequisites and target-device requirements. They do not mean that a working port or installer exists yet.
+
+### Device requirements
+
+- Motorola Moto G60, model `XT2135-2`, codename `hanoip`.
+- At least 6 GB RAM for the initial target configuration.
+- Target firmware baseline: `S2RIS32.32-20-9-9-2-3`. Other builds or regional variants require separate compatibility checks.
+- Storage target: the owner's device has 128 GB total internal storage, with approximately 125 GB currently used. This is usage information, not a minimum free-space requirement.
+- **Storage flexibility is a development goal:** investigate support for other storage capacities where the partition layout and available space permit. Booting on every storage variant is not guaranteed until tested.
+
+### Development and installation prerequisites
+
+- A computer with Android Platform Tools, including ADB and Fastboot.
+- A USB data cable and working device/driver connection.
+- Bootloader unlock: **not required for documentation or early research**, but an unlocked bootloader will generally be required before installing and testing an unofficial system image. Unlocking may erase all user data; back up important files and verify the official device-specific unlock policy first.
+- A verified stock-firmware recovery path and backups before any future device testing.
+
+These are planning requirements, not a claim that the current repository contains a flashable build.
 
 ## Project goals
 
@@ -32,7 +55,10 @@ The goal is to investigate using genuine HyperOS system components, not to prese
 | Repository and project documentation | In progress |
 | Target model (XT2135-2) | Owner-reported; corroborated by Motorola documentation |
 | RAM (6 GB) | Owner-reported |
+| Internal storage (128 GB total; ~125 GB used) | Owner-reported |
 | Firmware build | Owner-reported; matching package identified |
+| ADB / Fastboot host tools | Required for future device work; not yet verified |
+| Bootloader unlock | Can be deferred until installation/testing |
 | Device firmware and partition baseline | Partially identified; more verification needed |
 | HyperOS 4 donor build provenance | Unverified |
 | Licensing / redistribution review | Pending |
