@@ -1,8 +1,17 @@
 # HyperOS-4-hanoip
 
-Community research and development project investigating the feasibility of a **genuine Xiaomi HyperOS 4 system port** for the Motorola Moto G60 (device codename: `hanoip`).
+Community research and development project investigating the feasibility of a **genuine Xiaomi HyperOS 4 system port** for the Motorola Moto G60 / Moto G60 Vision (device codename: `hanoip`).
 
 > **Status: Research / not bootable.** This repository currently contains planning and documentation only. No port, installer, recovery package, or working build is available here.
+
+## Target device
+
+- Model: Motorola XT2135-2 (Moto G60 / Moto G60 Vision)
+- RAM: 6 GB (reported by device owner)
+- Reported firmware: `S2RIS32.32-20-9-9-2-3`
+- Matching firmware family: XT2135-2 HANOIP RETEU Android 12 package
+
+See [DEVICE_INFO.md](docs/DEVICE_INFO.md) for evidence and verification notes. Do not assume that another XT2135 variant or regional firmware is interchangeable.
 
 ## Project goals
 
@@ -21,18 +30,20 @@ The goal is to investigate using genuine HyperOS system components, not to prese
 | Area | Status |
 |---|---|
 | Repository and project documentation | In progress |
-| Exact Moto G60 model / SKU confirmation | Not yet verified |
-| Device firmware and partition baseline | Not documented yet |
+| Target model (XT2135-2) | Owner-reported; corroborated by Motorola documentation |
+| RAM (6 GB) | Owner-reported |
+| Firmware build | Owner-reported; matching package identified |
+| Device firmware and partition baseline | Partially identified; more verification needed |
 | HyperOS 4 donor build provenance | Unverified |
 | Licensing / redistribution review | Pending |
 | Compatibility analysis | Not started |
 | Build and boot testing | Not started |
 
-See [PORTING_STATUS.md](docs/PORTING_STATUS.md) and [DEVICE_INFO.md](docs/DEVICE_INFO.md).
+See [PORTING_STATUS.md](docs/PORTING_STATUS.md), [DEVICE_INFO.md](docs/DEVICE_INFO.md), and [COMPATIBILITY.md](docs/COMPATIBILITY.md).
 
 ## Safety and testing notes
 
-- Android firmware modification can permanently damage a device, erase data, or make it unusable. Research first; do not flash experimental images on a daily-use device.
+- Android firmware modification can permanently damage a device, erase data, or make it unusable. Research first; do not experiment on a daily-use device.
 - Keep a verified stock-firmware recovery path and independent backups before any future device testing.
 - Never publish private keys, account tokens, device identifiers, personal data, or proprietary firmware dumps.
 - Do not redistribute Xiaomi or Motorola proprietary files unless their applicable terms explicitly allow it. Link to lawful sources and document required extraction steps instead.
