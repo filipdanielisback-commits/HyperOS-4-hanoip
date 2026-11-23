@@ -12,7 +12,7 @@
 | Current firmware | `S2RIS32.32-20-9-9-2-3` | Supplied by project owner; matching XT2135-2 RETEU firmware package is listed publicly |
 | Region / channel | RETEU (Europe) is a strong match | Inferred from the matching firmware package name; confirm the phone's software channel |
 | Android version | Android 12 for this firmware package | Firmware listing labels the package Android 12; confirm on handset |
-| Storage capacity | Unknown | Not supplied |
+| Internal storage | 128 GB total; approximately 125 GB used | Supplied by project owner; available free space not stated |
 | Current build fingerprint | Unknown | Not collected |
 
 ## Firmware identity
